@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+## Goal and Initial Idea
 
-You can use the [editor on GitHub](https://github.com/Hollyqui/JokeRecognition/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Upon reading previous papers it came to our notice that previous humour recognition papers are based on a comparison between jokes and news headlines. The results attained with those papers are questionable since news headlines do not represent spoken everyday language (such as used in most jokes). Therefore, the identification task becomes nearly trivial (with a fairly simple network we were able to achieve a prediction accuracy of ca. 93%). To combat this 'systematic error' this repository is dedicated to creating/testing a classifier on a comparison between jokes and quotes. This is a much more difficult task as both are spoken language and both contain few rare words.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Dataset information
 
-### Markdown
+Yet to come
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Network
+
+A convolutional network was created using Keras and Tensorflow. It consists of 7 layers as shown in the source code below.
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# Network Architecture:
 
-- Bulleted
-- List
+model = keras.Sequential([
+   keras.layers.Conv1D(filters,
+                       kernel_size=(3),
+                       activation='relu'),
+   keras.layers.MaxPool1D((2)),
+   keras.layers.Dropout(0.25),
+   keras.layers.Flatten(),
+   keras.layers.Dense(128, activation='relu'),
+   keras.layers.Dropout(0.5),
+   keras.layers.Dense(2, activation='softmax')
+])
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Results
 
-### Jekyll Themes
+Yet to come
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Hollyqui/JokeRecognition/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+The network is trained using the Adam optimizer and the Categorical Cross Entropy loss function
 
-### Support or Contact
+### Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This project is developed by Szymon Fonau [@Sarkosos](https://github.com/Sarkosos) and Felix Quinque [@Hollyqui](https://github.com/Hollyqui) as a project for [Maastricht University](maastrichtuniversity.nl)(supervised by Jerry Spanakis). If you have any questions about the project you can contact us via:
+s.fonau@student.maastrichtuniversity.nl
+f.quinque@student.maastrichtuniversity.nl
