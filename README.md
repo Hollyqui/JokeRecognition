@@ -43,6 +43,9 @@ The findings of Figure 1 are also supported by Figure 2 and Figure 3. Figure 2 (
 
 ![Figure 3: histogram jokes vs quotes](histogram_joke_quote.png)
 
+## Discussion
+
+Our results showcase that there is a clear difference in performances depending on which dataset you use and from which domain it is. Chen and Soo obtained extremely good results using CNNs on their datasets because of the domains between positive and negative set were very different. This, of course, doesn’t change the fact that their model is an improvement on the state of the art, as most previous studies used the same or similar datasets. Our results suggest a change of focus of negative datasets used in creating humour detection networks, towards a more diverse range of negative examples. Such that multiple non-humorous domains can be taken into consideration, making future models more diverse. 
 
 
 ### Contact
