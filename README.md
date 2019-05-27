@@ -1,6 +1,6 @@
 ## Goal and Initial Idea
 
-Upon reading previous papers it came to our notice that previous humour recognition papers are based on a comparison between jokes and news headlines. The results attained with those papers are questionable since news headlines do not represent spoken everyday language (such as used in most jokes). Therefore, the identification task becomes nearly trivial (with a fairly simple network we were able to achieve a prediction accuracy of ca. 93%). To combat this 'systematic error' this repository is dedicated to creating/testing a classifier on a comparison between jokes and quotes. This is a much more difficult task as both are spoken language and both contain few rare words.  
+Upon reading previous papers it came to our notice that previous humour recognition papers are based on a comparison between jokes and news headlines. The results attained with those papers are questionable since news headlines do not represent spoken everyday language (such as used in most jokes). We propose that the major differences in the domain of the datasets may cause a systematic error in the experiment. In order to investigate this, we will run an experiment using a convolutional neural network using a negative dataset of news headlines and a different dataset of quotes or rather proverbs/sayings, which usually contain more common language. 
 
 ## Dataset information
 
