@@ -57,3 +57,4 @@ Our results showcase that there is a clear difference in performances depending 
 This project is developed by Szymon Fonau [@Sarkosos](https://github.com/Sarkosos) and Felix Quinque [@Hollyqui](https://github.com/Hollyqui) as a project for [Maastricht University](maastrichtuniversity.nl)(supervised by Jerry Spanakis). If you have any questions about the project you can contact us via:
 s.fonau@student.maastrichtuniversity.nl
 f.quinque@student.maastrichtuniversity.nl
+For further information you can read our [paper](Joke_Recognition_using_CNNs.pdf)
